@@ -9,12 +9,26 @@ hr {
     color: gray;
 }
 
-section {
+a {
+    text-decoration: none;
+}
 
+a:hover {
+    text-decoration: underline;
 }
 
 section a {
     color: white;
+}
+
+p:first-child:first-letter {
+    color: #903;
+    float: left;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
 }
 
 .notes {
