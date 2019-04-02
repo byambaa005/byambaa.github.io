@@ -1,8 +1,8 @@
 body {
     background-color: #3f3f3f;
-    margin: 0;
     padding: 0;
     color: #93dbff;
+    margin: 0 10px 0 10px
 }
 
 hr {
@@ -19,6 +19,10 @@ a:hover {
 
 section a {
     color: white;
+}
+
+.first-section {
+    border-top: 1px solid gray
 }
 
 p:first-child:first-letter {
