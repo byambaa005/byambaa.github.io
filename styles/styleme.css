@@ -12,3 +12,18 @@ hr {
 section {
 
 }
+
+section a {
+    color: white;
+}
+
+.notes {
+    font-style: italic;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.emphasis {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: azure;
+}
