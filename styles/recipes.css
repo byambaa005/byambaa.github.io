@@ -23,6 +23,8 @@ h1 {
     text-align: center;
     font-weight: bold;
     font-size: 22px;
+    width: 50%;
+    margin: auto;
 }
 
 ul {
