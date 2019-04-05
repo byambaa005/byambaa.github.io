@@ -7,13 +7,17 @@
 
         /* runs test to see if expected argument is === to value returned by function2test argument */
         function myFunctionTest(expected, function2test) {
+            let functionResult = function2test();
             if (expected.constructor === Array) {
                 expected = expected.toString();
             }
-            if (expected === function2test()) {
+            if (functionResult.constructor === Array) {
+                functionResult = functionResult.toString();
+            }
+            if (expected === functionResult) {
                 return "TEST SUCCEEDED";
             } else {
-                return "TEST FAILED.  Expected " + expected + " found " + function2test();
+                return "TEST FAILED.  Expected " + expected + " found " + functionResult;
             }
         }
 
@@ -142,7 +146,7 @@
             return longWords;
         }
 
-        console.log("Expected output of filterLongWords(['bad', 'crazy', 'mad'], 2) is ['crazy']  " + myFunctionTest(['bad', 'crazy', 'mad'], function () {
+        console.log("Expected output of filterLongWords(['bad', 'crazy', 'mad'], 2) is ['bad', 'crazy', 'mad']  " + myFunctionTest(['bad', 'crazy', 'mad'], function () {
             return filterLongWords(['bad', 'crazy', 'mad'], 2);
         }));
     </script>
