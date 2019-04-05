@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #sad {
+            display: block;
+        }
+        #happy {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <img id="sad" src="images/swap/sad.jpg" alt="sad" />
+
+    <button onclick="swap()">SWAP</button>
+    <script>
+        let sad = document.getElementById('sad');
+
+        function swap() {
+            let currentImgUrl = sad.src;
+            let isHappyImage = currentImgUrl.indexOf("happy");
+            if (isHappyImage !== -1) {
+                sad.src = 'images/swap/sad.jpg'
+            } else {
+                sad.src = 'images/swap/happy.jpg'
+            }
+        }
+    </script>
+</body>
+</html>
