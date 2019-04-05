@@ -1,0 +1,63 @@
+body {
+    margin: 10px;
+    background-color: #f1f1f1;
+}
+
+.form-item {
+    margin: 10px 0;
+}
+
+form .form-input, select {
+    margin-top:10px;
+}
+
+input[type=text], select, input[type=date] {
+    padding: 5px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    color: white;
+    background: gray;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.task-list {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+button, input[type=submit] {
+    width: 120px;
+    color: white;
+    background-color: gray;
+    display: inline-block;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 11pt;
+    border-radius: 0;
+}
