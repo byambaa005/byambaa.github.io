@@ -26,3 +26,11 @@ textarea {
     font-family: monospace;
     font-size: 12pt;
 }
+
+
+.validator{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+}
