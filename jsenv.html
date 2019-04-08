@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="clickbtn">Click!</button>
+<span id="output"></span>
+<script type="text/javascript">
+    let timer = null;
+    function rudy() {
+        document.getElementById("output").innerHTML += "Rudy!";
+    }
+
+    window.onload = function() {
+        let btn = document.getElementById("clickbtn");
+        btn.onclick = function() {
+            if (timer == null) {
+                timer = setInterval(rudy, 1000);
+            } else {
+                clearInterval(timer);
+                timer = null;
+            }
+        };
+    };
+
+
+</script>
+</body>
+</html>
